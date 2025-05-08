@@ -57,12 +57,11 @@ body {
   position: absolute;
   top: 50%;
   left: 0;
-  width: 0;
+  width: var(--progress-width, 0); /* Use the CSS variable */
   height: 2px;
   background-color: #4caf50;
   transition: width 0.3s;
 }
-
 .buttons {
   display: flex;
   justify-content: space-between;
